@@ -1,0 +1,1327 @@
+[
+    {
+        "name": "Jonathan Joestar",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "Joestar Family",
+        "standType": ["Hamon User", "No Stand"],
+        "image": "https://static.jojowiki.com/images/a/a7/latest/20220210221643/JonathanAvAnim.png"
+    },
+    {
+        "name": "Robert E. O. Speedwagon",
+        "part": ["Phantom Blood", "Battle Tendency"],
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "Speedwagon Foundation",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/3/31/latest/20191015214319/SpeedwagonAvAnim1.png"
+    },
+    {
+        "name": "Will Anthonio Zeppeli",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Zeppeli Family", "Disciple of Tonpetty"],
+        "standType": ["Hamon User","No Stand"],
+        "image": "https://static.jojowiki.com/images/e/ec/latest/20211221222513/WillZeppeliAvAnim.png"
+    },
+    {
+        "name": "Tonpetty",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "Tibetan",
+        "affiliation": "N/A",
+        "standType": ["Hamon User","No Stand"],
+        "image": "https://static.jojowiki.com/images/b/ba/latest/20191015214100/TonpettyAvAnim.png"
+    },
+    {
+        "name": "Dire",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Disciple of Tonpetty",
+        "standType": ["Hamon User","No Stand"],
+        "image": "https://static.jojowiki.com/images/5/50/latest/20191015214843/DireAvAnim.png"
+    },
+    {
+        "name": "Straizo",
+        "part": ["Phantom Blood", "Battle Tendency"],
+        "gender": "Male",
+        "nationality": "Tibetan",
+        "affiliation": "Disciple of Tonpetty",
+        "standType": ["Hamon User","No Stand"],
+        "image": "https://static.jojowiki.com/images/8/8d/latest/20191015215247/StraizoAvAnim1.png"
+    },
+    {
+        "name": "Dio Brando",
+        "part": ["Phantom Blood", "Stardust Crusaders"],
+        "gender": "Other",
+        "nationality": "British",
+        "affiliation": ["Brando Family","Agents of DIO"],
+        "standType": ["Close-Range","Range Irrelevant","Natural","Humanoid"],
+        "image": "https://static.jojowiki.com/images/3/32/latest/20191015213504/DioAvAnim1.png"
+    },
+    {
+        "name": "Wang Chan",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": ["British","Chinese"],
+        "affiliation": "Agents of DIO",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/7/7d/latest/20191015213337/WangAvAnim.png"
+    },
+    {
+        "name": "Jack the Ripper",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "Agents of DIO",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/8/8c/latest/20191015215108/JackAvAnim.png"
+    },
+    {
+        "name": "Bruford",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/d/da/latest/20191015214703/BrufordAvAnim.png"
+    },
+    {
+        "name": "Tarkus",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/2/23/latest/20191015214524/TarkusAvAnim.png"
+    },
+    {
+        "name": "Dario Brando",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "Brando Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/c/ca/latest/20191015215211/DarioAvAnim.png"
+    },
+    {
+        "name": "Erina Pendleton",
+        "part": ["Phantom Blood","Battle Tendency"],
+        "gender": "Female",
+        "nationality": ["British","American"],
+        "affiliation": "Speedwagon Foundation",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/a/a4/latest/20191015214245/ErinaAvAnim1.png"
+    },
+    {
+        "name": "Danny",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Joestar Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/1/1c/latest/20200102212940/DannyAvAnime.png"
+    },
+    {
+        "name": "Poco",
+        "part": "Phantom Blood",
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/3/35/latest/20191015214654/PocoAvAnim.png"
+    },
+    {
+        "name": "Joseph Joestar",
+        "part": ["Battle Tendency","Stardust Crusaders","Diamond is Unbreakable"],
+        "gender": "Male",
+        "nationality": ["British","American"],
+        "affiliation": ["Joestar Family","Disciple of Lisa Lisa","Joestar Group","Speedwagon Foundation"],
+        "standType": ["Close-Range","Reconnaissance","Natural","Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/c/c1/latest/20191015215038/JosephAvAnim2.png"
+    },
+    {
+        "name": "Caesar Anthonio Zeppeli",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Speedwagon Foundation","Disciple of Lisa Lisa"],
+        "standType": ["No Stand","Hamon User"],
+        "image": "https://static.jojowiki.com/images/4/4a/latest/20191015220114/CaesarAvAnim.png"
+    },
+    {
+        "name": "Lisa Lisa",
+        "part": "Battle Tendency",
+        "gender": "Female",
+        "nationality": "Unknown",
+        "affiliation": "Joestar Family",
+        "standType": ["No Stand","Hamon User"],
+        "image": "https://static.jojowiki.com/images/4/45/latest/20200830215939/LisaAvAnim2.png"
+    },
+    {
+        "name": "Rudol von Stroheim",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "German",
+        "affiliation": "Speedwagon Foundation",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/0/0d/latest/20191015213958/StroheimAvAnim.png"
+    },
+    {
+        "name": "Kars",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Pillar Men",
+        "standType": ["No Stand","Hamon User"],
+        "image": "https://static.jojowiki.com/images/e/e0/latest/20210310114718/KarsAvAnim.png"
+    },
+    {
+        "name": "Esidisi",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Pillar Men",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/8/83/latest/20191015215515/EsidisiAvAnim.png"
+    },
+    {
+        "name": "Wamuu",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Pillar Men",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/2/24/latest/20191015214422/WamuuAvAnim.png"
+    },
+    {
+        "name": "Santana",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Pillar Men",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/8/8a/latest/20191015215650/SantanaAvAnim.png"
+    },
+    {
+        "name": "Smokey Brown",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": "Speedwagon Foundation",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/48/latest/20191015212816/SmokeyAvAnim.png"
+    },
+    {
+        "name": "Messina",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Disciple of Lisa Lisa",
+        "standType": ["No Stand","Hamon User"],
+        "image": "https://static.jojowiki.com/images/0/0f/latest/20191015215421/MessinaAvAnim.png"
+    },
+    {
+        "name": "Loggins",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Disciple of Lisa Lisa",
+        "standType": ["No Stand","Hamon User"],
+        "image": "https://static.jojowiki.com/images/5/5d/latest/20191015213206/LogginsAvAnim.png"
+    },
+    {
+        "name": "Suzi Q",
+        "part": ["Battle Tendency","Stardust Crusaders"],
+        "gender": "Female",
+        "nationality": "Italian",
+        "affiliation": "Speedwagon Foundation",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/8/85/latest/20210310120011/SuziAvAnim2.png"
+    },
+    {
+        "name": "George Joestar II",
+        "part": "Battle Tendency",
+        "gender": "Male",
+        "nationality": "British",
+        "affiliation": "Joestar Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/d/d6/latest/20200102230710/GeorgeJoestarII2AvAnime.png"
+    },
+    {
+        "name": "Jotaro Kujo",
+        "part": ["Stardust Crusaders","Diamond is Unbreakable", "Vento Aureo", "Stone Ocean"],
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Joestar Family","Joestar Group","Speedwagon Foundation"],
+        "standType": ["Close-Range","Range Irrelevant","Reconnaissance","Natural","Humanoid"],
+        "image": "https://static.jojowiki.com/images/8/8f/latest/20220630085205/JotaroAvAnim3.png"
+    },
+    {
+        "name": "Muhammad Avdol",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": ["Joestar Group", "Speedwagon Foundation"],
+        "standType": ["Close-Range", "Reconnaissance", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/3/37/latest/20191015213131/AvdolAvAnim.png"
+    },
+    {
+        "name": "Noriaki Kakyoin",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Agents of DIO", "Joestar Group"],
+        "standType": ["Long-Range", "Reconnaissance", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/5c/latest/20230131013941/KakyoinAvAnim.png"
+    },
+    {
+        "name": "Jean Pierre Polnareff",
+        "part": ["Stardust Crusaders", "Vento Aureo"],
+        "gender": "Male",
+        "nationality": "French",
+        "affiliation": ["Agents of DIO", "Joestar Group", "Passione", "Speedwagon Foundation"],
+        "standType": ["Close-Range", "Artificial", "Natural", "Humanoid", "Automatic", "Materialized", "Evolved"],
+        "image": "https://static.jojowiki.com/images/7/70/latest/20191015214338/PolnareffAvAnim3.png"
+    },
+    {
+        "name": "Iggy",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": "Joestar Group",
+        "standType": ["Close-Range", "Materialized", "Artificial", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/17/latest/20191015215854/IggyAvAnim.png"
+    },
+    {
+        "name": "Gray Fly",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/8/89/latest/20191015215701/GrayFlyAvAnim.png"
+    },
+    {
+        "name": "Imposter Captain Tennille",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/7/7b/latest/20191015214753/TennilleAvAnim.png"
+    },
+    {
+        "name": "Forever",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Materialized", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/8/8a/latest/20191015215858/ForeverAvAnim.png"
+    },
+    {
+        "name": "Devo the Cursed",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Native American",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/f/f4/latest/20191015220153/DevoAvAnim.png"
+    },
+
+    {
+        "name": "Rubber Soul",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Singapore",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Materialized", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/f/fb/latest/20191015212846/RubberSoulAvAnim.png"
+    },
+    {
+        "name": "J. Geil",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/de/latest/20191015214242/JGeilAvAnim.png"
+    },
+    {
+        "name": "Hol Horse",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/d3/latest/20191015212721/HolHorseAvAnim.png"
+    },
+    {
+        "name": "Nena",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Materialized", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/9/9d/latest/20240510202139/NenaAvAnim.png"
+    },
+    {
+        "name": "ZZ",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Materialized", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/c/cf/latest/20191015213002/ZZAvAnim.png"
+    },
+    {
+        "name": "Enya the Hag",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/f/fa/latest/20191015214154/EnyaAvAnim.png"
+    },
+    {
+        "name": "Steely Dan",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/a/a7/latest/20191015212922/SteelyDanAvAnim.png"
+    },
+    {
+        "name": "Arabia Fats",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/9/9e/latest/20191015214755/ArabiaFatsAvAnim.png"
+    },
+    {
+        "name": "Mannish Boy",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/d1/latest/20191015215141/MannishAvAnim.png"
+    },
+    {
+        "name": "Cameo",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/7/7d/latest/20191015215348/CameoAvAnim.png"
+    },
+    {
+        "name": "Midler",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/16/latest/20200102223240/MidlerAvAnim.png"
+    },
+    {
+        "name": "N'Doul",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Materialized", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/2/2b/latest/20191015215711/NdoulAvAnim.png"
+    },
+    {
+        "name": "Oingo",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Integrated", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/6/62/latest/20191015213954/OingoAvAnim.png"
+    },
+    {
+        "name": "Boingo",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Automatic", "Foresight", "Materialized", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/2/2d/latest/20191015214857/BoingoAvAnim.png"
+    },
+
+    {
+        "name": "Anubis",
+        "part": "Stardust Crusaders",
+        "gender": "N/A",
+        "nationality": "N/A",
+        "affiliation": "Agents of DIO",
+        "standType": ["Automatic", "Materialized", "Psychological Assault", "Artificial", "Non-Humanoid", "Multi-User", "Sentient"],
+        "image": "https://static.jojowiki.com/images/5/57/latest/20191015214949/AnubisAvAnim.png"
+    },
+    {
+        "name": "Mariah",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Long-Range", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/b/b8/latest/20191015213920/MariahAvAnim.png"
+    },
+    {
+        "name": "Alessi",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Materialized", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/0/0f/latest/20191015214223/AlessiAvAnim.png"
+    },
+    {
+        "name": "Daniel J. D'Arby",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Automatic", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/55/latest/20191015213252/DanielAvAnim.png"
+    },
+    {
+        "name": "Pet Shop",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Natural","Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/0/07/latest/20191015213900/PetShopAvAnim.png"
+    },
+    {
+        "name": "Telence T. D'Arby",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Automatic", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/6/61/latest/20191015214542/TelenceAvAnim.png"
+    },
+    {
+        "name": "Vanilla Ice",
+        "part": "Stardust Crusaders",
+        "gender": "Male",
+        "nationality": "Egyptian",
+        "affiliation": "Agents of DIO",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/c/cf/latest/20191015214507/VanillaIceAvAnim.png"
+    },
+    {
+        "name": "Holy Kujo",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": ["American", "Japanese"],
+        "affiliation": ["Joestar Family", "Speedwagon Foundation"],
+        "standType": ["Close-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/f/f8/latest/20191015212950/HolyAvAnim.png"
+    },
+    {
+        "name": "Merlai Anne",
+        "part": "Stardust Crusaders",
+        "gender": "Female",
+        "nationality": "Hong Kong",
+        "affiliation": "Joestar Group",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/48/latest/20191015214920/MerlaiAnneAvAnim.png"
+    },
+    {
+        "name": "Josuke Higashikata",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["Joestar Family", "Higashikata Family"],
+        "standType": ["Close-Range", "Natural", "Humanoid", "High School Student"],
+        "image": "https://static.jojowiki.com/images/2/2e/latest/20220611204758/JosukeAvAnim.png"
+    },
+    {
+        "name": "Koichi Hirose",
+        "part": ["Diamond is Unbreakable", "Vento Aureo"],
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "High School Student",
+        "standType": ["Long-Range", "Close-Range", "Psychological Assault", "Artificial", "Humanoid", "Non-Humanoid", "Sentient", "Evolved"],
+        "image": "https://static.jojowiki.com/images/2/2f/latest/20200930010221/KoichiAvAnim4.png"
+    },
+    {
+        "name": "Okuyasu Nijimura",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "High School Student",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/1e/latest/20191015214139/OkuyasuAvAnim.png"
+    },
+    {
+        "name": "Rohan Kishibe",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Keicho Nijimura",
+        "standType": ["Close-Range", "Psychological Assault", "Reconnaissance", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/56/latest/20220310205808/RohanAvAnim.png"
+    },
+    {
+        "name": "Yoshikage Kira",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Office Worker",
+        "standType": ["Close-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/2/26/latest/20230304074418/KiraAvAnim.gif"
+    },
+    {
+        "name": "Anjuro Katagiri",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Keicho Nijimura",
+        "standType": ["Long-Range", "Materialized", "Natural", "Humanoid", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/f/fc/latest/20201010034048/AngeloAvAnim.png"
+    },
+    {
+        "name": "Keicho Nijimura",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Enya the Hag"],
+        "standType": ["Close-Range", "Reconnaissance", "Artificial", "Humanoid", "Multi-Unit"],
+        "image": "https://static.jojowiki.com/images/a/a0/latest/20200808162520/KeichoAvAnim.png"
+    },
+    {
+        "name": "Tamami Kobayashi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Keicho Nijimura",
+        "standType": ["Range Irrelevant", "Psychological Assault", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/8/82/latest/20191015215654/TamamiAvAnim.png"
+    },
+    {
+        "name": "Toshikazu Hazamada",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Keicho Nijimura"],
+        "standType": ["Automatic", "Materialized", "Sentient", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/b/b5/latest/20210215205808/HazamadaAvAnim.png"
+    },
+    {
+        "name": "Yukako Yamagishi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Keicho Nijimura"],
+        "standType": ["Range Irrelevant", "Integrated", "Materialized", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/0/04/latest/20191015215327/YukakoAvAnim.png"
+    },
+    {
+        "name": "Akira Otoishi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Keicho Nijimura",
+        "standType": ["Long-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/10/latest/20191015213539/AkiraAvAnim.png"
+    },
+    {
+        "name": "Bug-Eaten",
+        "part": "Diamond is Unbreakable",
+        "gender": "N/A",
+        "nationality": "Japanese",
+        "affiliation": "Akira Otoishi",
+        "standType": ["Close-Range", "Artificial", "Non-Humanoid", "Multi-User"],
+        "image": "https://static.jojowiki.com/images/3/38/latest/20191015214633/MushikuiAvAnim.png"
+    },
+    {
+        "name": "Not Bug-Eaten",
+        "part": "Diamond is Unbreakable",
+        "gender": "N/A",
+        "nationality": "Japanese",
+        "affiliation": "Akira Otoishi",
+        "standType": ["Close-Range", "Artificial", "Non-Humanoid", "Multi-User"],
+        "image": "https://static.jojowiki.com/images/5/5e/latest/20200620000229/NotBugEatenAvAnim.png"
+    },
+    {
+        "name": "Shigekiyo Yangu",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student", "Keicho Nijimura"],
+        "standType": ["Long-Range", "Reconnaissance", "Artificial", "Non-Humanoid", "Multi-Unit"],
+        "image": "https://static.jojowiki.com/images/4/47/latest/20191015215543/ShigechiAvAnim.png"
+    },
+    {
+        "name": "Yoshihiro Kira",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Agents of DIO",
+        "standType": ["Range Irrelevant", "Materialized", "Psychological Assault", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/4/42/latest/20191015212736/YoshihiroAvAnim.png"
+    },
+    {
+        "name": "Ken Oyanagi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Yoshihiro Kira",
+        "standType": ["Close-Range", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/13/latest/20191015215122/OyanagiAvAnim.png"
+    },
+    {
+        "name": "Yuya Fungami",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": ["High School Student","Yoshihiro Kira"],
+        "standType": ["Long-Range", "Automatic", "Reconnaissance", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/e/e7/latest/20191015215834/YuyaAvAnim.png"
+    },
+    {
+        "name": "Toyohiro Kanedaichi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Yoshihiro Kira",
+        "standType": ["Automatic", "Materialized", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/a/ad/latest/20191015214555/ToyohiroAvAnim.png"
+    },
+    {
+        "name": "Terunosuke Miyamoto",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Yoshihiro Kira",
+        "standType": ["Close-Range", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/10/latest/20191015212851/TerunosukeAvAnim.png"
+    },
+    {
+        "name": "Masazo Kinoto",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Yoshihiro Kira",
+        "standType": ["Automatic", "Psychological Assault", "Artificial", "Humanoid", "Multi-User","Sentient"],
+        "image": "https://static.jojowiki.com/images/d/d2/latest/20191015212935/MasazoAvAnim.png"
+    },
+    {
+        "name": "Tomoko Higashikata",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": "Higashikata Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/3/34/latest/20200927215702/TomokoAvAnim.png"
+    },
+    {
+        "name": "Ryohei Higashikata",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Higashikata Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/43/latest/20201010031842/RyoheiAvAnim.png"
+    },
+    {
+        "name": "Mansaku Nijimura",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Agents of DIO",
+        "standType": "Unknown",
+        "image": "https://static.jojowiki.com/images/f/f5/latest/20191015215957/NijimuraDadAvAnim.png"
+    },
+    {
+        "name": "Tonio Trussardi",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "N/A",
+        "standType": ["Range Irrelevant", "Natural", "Non-Humanoid", "Multi-Unit"],
+        "image": "https://static.jojowiki.com/images/c/cd/latest/20200806025655/TonioAvAnim.png"
+    },
+    {
+        "name": "Shizuka Joestar",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": "Joestar Family",
+        "standType": ["Range Irrelevant", "Integrated", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/0/0d/latest/20220213044842/ShizukaAvAnim.png"
+    },
+    {
+        "name": "Reimi Sugimoto",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/1/13/latest/20210315183549/ReimiAvAnim.png"
+    },
+    {
+        "name": "Arnold",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/8/8e/latest/20191015214106/ArnoldAvAnim.png"
+    },
+    {
+        "name": "Aya Tsuji",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": "N/A",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/d2/latest/20191015213045/AyaAvAnim.png"
+    },
+    {
+        "name": "Hayato Kawajiri",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Kawajiri Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/4a/latest/20201018014703/HayatoAvAnim.png"
+    },
+    {
+        "name": "Shinobu Kawajiri",
+        "part": "Diamond is Unbreakable",
+        "gender": "Female",
+        "nationality": "Japanese",
+        "affiliation": "Kawajiri Family",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/45/latest/20200806011624/ShinobuAvAnim.png"
+    },
+    {
+        "name": "Mikitaka Hazekura",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": ["Japanese","Magellan Nebula"],
+        "affiliation": "N/A",
+        "standType": ["Range Irrelevant", "Integrated", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/8/87/latest/20211221202429/MikitakaAvAnim.png"
+    },
+    {
+        "name": "Tama",
+        "part": "Diamond is Unbreakable",
+        "gender": "Male",
+        "nationality": "Japanese",
+        "affiliation": "Yoshihiro Kira",
+        "standType": ["Range Irrelevant", "Integrated", "Materialized", "Phenomenon", "Sentient", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/1c/latest/20191015214451/TamaAvAnim.png"
+    },
+    {
+        "name": "Giorno Giovanna",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": ["Japanese", "Italian"],
+        "affiliation": ["High School Student", "Joestar Family", "Brando Family", "Passione", "Team Bucciarati"],
+        "standType": ["Close-Range", "Range Irrelevant", "Reconnaissance", "Natural", "Humanoid", "Sentient", "Evolved"],
+        "image": "https://static.jojowiki.com/images/d/d7/latest/20191015215128/GiornoAvAnim.png"
+    },
+    {
+        "name": "Bruno Bucciarati",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Close-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/d4/latest/20191015215945/BrunoAvAnim.png"
+    },
+    {
+        "name": "Leone Abbacchio",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Close-Range", "Reconnaissance", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/b/b8/latest/20191015214642/AbbacchioAvAnim.png"
+    },
+    {
+        "name": "Guido Mista",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Long-Range", "Natural", "Non-Humanoid", "Multi-Unit", "Sentient"],
+        "image": "https://static.jojowiki.com/images/c/ce/latest/20191015214513/MistaAvAnim.png"
+    },
+    {
+        "name": "Narancia Ghirga",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Long-Range", "Artificial", "Non-Humanoid", "Reconnaissance"],
+        "image": "https://static.jojowiki.com/images/1/11/latest/20230131012915/NaranciaAvAnim.png"
+    },
+    {
+        "name": "Pannacotta Fugo",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Close-Range", "Natural", "Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/d/dc/latest/20191015214039/FugoAvAnim.png"
+    },
+    {
+        "name": "Trish Una",
+        "part": "Vento Aureo",
+        "gender": "Female",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Close-Range", "Natural", "Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/3/3b/latest/20191015214632/TrishAvAnim.png"
+    },
+    {
+        "name": "Coco Jumbo",
+        "part": "Vento Aureo",
+        "gender": "N/A",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Team Bucciarati"],
+        "standType": ["Range Irrelevant", "Integrated", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/19/latest/20191015213533/CocoJumboAvAnim.png"
+    },
+    {
+        "name": "Diavolo",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": ["Close-Range", "Range Irrelevant", "Foresight", "Natural", "Humanoid", "Multi-User"],
+        "image": "https://static.jojowiki.com/images/1/1a/latest/20200716205201/DiavoloAvAnim.png"
+    },
+    {
+        "name": "Vinegar Doppio",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": ["Close-Range", "Range Irrelevant", "Foresight", "Natural", "Humanoid", "Multi-User"],
+        "image": "https://static.jojowiki.com/images/4/4e/latest/20191015213025/DoppioAvAnim.png"
+    },
+    {
+        "name": "Leaky-Eye Luca",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/b/bb/latest/20191015213452/LucaAvAnim.png"
+    },
+    {
+        "name": "Polpo",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": ["Automatic", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/59/latest/20191015214312/PolpoAvAnim.png"
+    },
+    {
+        "name": "Mario Zucchero",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/d/d8/latest/20191015214815/ZuccheroAvAnim.png"
+    },
+    {
+        "name": "Sale",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Passione",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/e/e1/latest/20211221205540/SaleAvAnim.png"
+    },
+    {
+        "name": "Risotto Nero",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Close-Range", "Natural", "Non-Humanoid", "Multi-Unit"],
+        "image": "https://static.jojowiki.com/images/7/76/latest/20191015213937/NeroAvAnim.png"
+    },
+    {
+        "name": "Formaggio",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/0/07/latest/20211221212428/FormaggioAvAnim.png"
+    },
+    {
+        "name": "Illuso",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/7/73/latest/20191015215041/IllusoAvAnim.png"
+    },
+    {
+        "name": "Prosciutto",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Close-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/b/ba/latest/20211221204741/ProsciuttoAvAnim.png"
+    },
+    {
+        "name": "Pesci",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Long-Range", "Reconnaissance", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/6/63/latest/20191015214554/PesciAvAnim.png"
+    },
+    {
+        "name": "Melone",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Automatic", "Materialized", "Natural", "Artificial", "Humanoid", "Non-Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/2/2d/latest/20191015213259/MeloneAvAnim.png"
+    },
+    {
+        "name": "Ghiaccio",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/7/7d/latest/20191015215627/GhiaccioAvAnim.png"
+    },
+    {
+        "name": "Squalo",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Unità Speciale"],
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/1/17/latest/20191015215229/SqualoAvAnim.png"
+    },
+    {
+        "name": "Tizzano",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Unità Speciale"],
+        "standType": ["Long-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/e/e0/latest/20191015215629/TizzanoAvAnim.png"
+    },
+    {
+        "name": "Carne",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "Unità Speciale"],
+        "standType": ["Automatic", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/4/48/latest/20191015215844/CarneAvAnim.png"
+    },
+    {
+        "name": "Cioccolata",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Passione",
+        "standType": ["Close-Range", "Integrated", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/e/e3/latest/20191015213958/CioccolataAvAnim.png"
+    },
+    {
+        "name": "Secco",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/0/08/latest/20211221222357/SeccoAvAnim.png"
+    },
+    {
+        "name": "Scolippi",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "N/A",
+        "standType": ["Automatic", "Foresight", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/58/latest/20211221222500/ScolippiAvAnim.png"
+    },
+    {
+        "name": "Pericolo",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": "Passione",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/5/50/latest/20191015215654/PericoloAvAnim.png"
+    },
+    {
+        "name": "Donatella Una",
+        "part": "Vento Aureo",
+        "gender": "Female",
+        "nationality": "Italian",
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/4/41/latest/20191015214251/DonatellaAvAnim.png"
+    },
+    {
+        "name": "Sorbet",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": "Unknown",
+        "image": "https://static.jojowiki.com/images/5/52/latest/20191015215251/SorbetAvAnim.png"
+    },
+    {
+        "name": "Gelato",
+        "part": "Vento Aureo",
+        "gender": "Male",
+        "nationality": "Italian",
+        "affiliation": ["Passione", "La Squadra Esecuzioni"],
+        "standType": "Unknown",
+        "image": "https://static.jojowiki.com/images/2/28/latest/20191015215153/GelatoAvAnim.png"
+    },
+    {
+        "name": "Jolyne Cujoh",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "American",
+        "affiliation": ["Joestar Family", "Green Dolphin Street Prison"],
+        "standType": ["Close-Range", "Reconnaissance", "Natural", "Humanoid", "Integrated"],
+        "image": "https://static.jojowiki.com/images/c/c1/latest/20230826162920/JolyneAvAnim.png"
+    },
+    {
+        "name": "Ermes Costello",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": ["Mexican", "American"],
+        "affiliation": "Green Dolphin Street Prison",
+        "standType": ["Close-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/3/36/latest/20221228123753/ErmesAvAnim.png"
+    },
+    {
+        "name": "Emporio Alnino",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": "Green Dolphin Street Prison",
+        "standType": ["Range Irrelevant", "Materialized", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/b/bf/latest/20230702081234/EmporioAvAnim.png"
+    },
+    {
+        "name": "F.F.",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": ["Agents of Enrico Pucci", "Green Dolphin Street Prison"],
+        "standType": ["Range Irrelevant", "Integrated", "Phenomenon", "Multi-User"],
+        "image": "https://static.jojowiki.com/images/1/10/latest/20230207185629/FooFightersAvAnim.png"
+    },
+    {
+        "name": "Weather Report",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": "Green Dolphin Street Prison",
+        "standType": ["Close-Range", "Artificial", "Humanoid", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/4/4f/latest/20211202063308/WeatherReportAvAnim.png"
+    },
+    {
+        "name": "Narciso Anasui",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": "Green Dolphin Street Prison",
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/4/40/latest/20230217231112/AnasuiAvAnim.png"
+    },
+    {
+        "name": "Enrico Pucci",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Long-Range", "Close-Range", "Range Irrelevant", "Psychological Assault", "Natural", "Humanoid","Non-Humanoid", "Sentient", "Evolved"],
+        "image": "https://static.jojowiki.com/images/6/64/latest/20211203132113/PucciAvAnim.png"
+    },
+    {
+        "name": "Gwess",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": "Green Dolphin Street Prison",
+        "standType": ["Long-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/3/33/latest/20230207190225/GwessAvAnim.png"
+    },
+    {
+        "name": "Johngalli A.",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of DIO", "Agents of Enrico Pucci"],
+        "standType": ["Long-Range", "Reconnaissance", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/5e/latest/20211201174409/JohngalliAAvAnim.png"
+    },
+    {
+        "name": "Thunder McQueen",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Long-Range", "Artificial", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/4/4c/latest/20211202054549/ThunderMcQueenAvAnim.png"
+    },
+    {
+        "name": "Miraschon",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Long-Range", "Psychological Assault", "Artificial", "Humanoid", "Automatic"],
+        "image": "https://static.jojowiki.com/images/7/77/latest/20211201174250/MiraschonAvAnim.png"
+    },
+    {
+        "name": "Lang Rangler",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/5/59/latest/20211201174706/LangRanglerAvAnim.png"
+    },
+    {
+        "name": "Sports Maxx",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Range Irrelevant", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/a/a4/latest/20230209114809/SportsMaxxAvAnim.png"
+    },
+    {
+        "name": "Viviano Westwood",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "American",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Close-Range", "Natural", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/4/4e/latest/20220901173736/WestwoodAvAnim.png"
+    },
+    {
+        "name": "Kenzou",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Automatic", "Artificial", "Non-Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/0/04/latest/20221231143805/KenzouAvAnim.png"
+    },
+    {
+        "name": "D an G",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Automatic", "Natural", "Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/6/62/latest/20230221215547/DanGAvAnim.png"
+    },
+    {
+        "name": "Guccio",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Automatic", "Psychological Assault", "Natural", "Non-Humanoid", "Multi-Unit"],
+        "image": "https://static.jojowiki.com/images/a/a4/latest/20220901172952/GuccioAvAnim.png"
+    },
+    {
+        "name": "The Green Baby",
+        "part": "Stone Ocean",
+        "gender": "N/A",
+        "nationality": "N/A",
+        "affiliation": ["Agents of Enrico Pucci"],
+        "standType": ["Close-Range", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/a/a4/latest/20220901190414/GreenBabyAvAnim.png"
+    },
+    {
+        "name": "Miuccia Miuller",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "American",
+        "affiliation": ["Green Dolphin Street Prison", "Agents of Enrico Pucci"],
+        "standType": ["Close-Range", "Psychological Assault", "Artificial", "Humanoid"],
+        "image": "https://static.jojowiki.com/images/e/ed/latest/20220908072023/MiuMiuAvAnim.png"
+    },
+    {
+        "name": "Ungalo",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Joestar Family","Brando Family","Agents of Enrico Pucci"],
+        "standType": ["Range Irrelevant", "Psychological Assault", "Phenomenon"],
+        "image": "https://static.jojowiki.com/images/5/5a/latest/20230228031459/UngaloAvAnim.png"
+    },
+    {
+        "name": "Rikiel",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Joestar Family","Brando Family","Agents of Enrico Pucci"],
+        "standType": ["Close-Range", "Natural", "Non-Humanoid"],
+        "image": "https://static.jojowiki.com/images/c/c5/latest/20221202230728/RikielAvAnim.png"
+    },
+    {
+        "name": "Donatello Versus",
+        "part": "Stone Ocean",
+        "gender": "Male",
+        "nationality": "N/A",
+        "affiliation": ["Joestar Family","Brando Family","Agents of Enrico Pucci"],
+        "standType": ["Long-Range", "Psychological Assault", "Artificial", "Humanoid", "Sentient"],
+        "image": "https://static.jojowiki.com/images/4/41/latest/20221201121436/DonatelloAvAnim.png"
+    },
+    {
+        "name": "Gloria Costello",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": ["Mexican", "American"],
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/e/ea/latest/20220901090720/GloriaAvAnim.png"
+    },
+    {
+        "name": "Perla Pucci",
+        "part": "Stone Ocean",
+        "gender": "Female",
+        "nationality": "American",
+        "affiliation": "N/A",
+        "standType": "No Stand",
+        "image": "https://static.jojowiki.com/images/c/c6/latest/20221201151431/PerlaAvAnim.png"
+    }
+]

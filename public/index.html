@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>jojo search bar test</title>
+<!-- brother font -->
+  <link rel="stylesheet" href="https://use.typekit.net/xsw5kjq.css">
+  
+  <link
+    rel="stylesheet"
+    href="styles2.css"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="planet.png"
+  >
+  <script
+    type="module"
+    src="script.js"
+  ></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>JOJODLE</h1>
+      <h3>A <i>JoJo's Bizarre Adventure</i> themed Wordle game.</h3>
+      <!-- Test image to verify file can be loaded -->
+      <img src="/headerimage.png" style="display: none" alt="test" onload="console.log('Image loaded!')" onerror="console.error('Image failed to load')">
+    </div>
+  </header>
+  <main id="app">
+    <form id="searchForm">
+      <input
+        id="searchText"
+        type="text"
+      >
+      <button>Search</button>
+    </form>
+    <section id="characters">
+      <!-- JavaScript will put JoJo characters here -->
+    </section>
+  </main>
+  <footer>
+    <i>A JoJo's Bizarre Adventure Character Browser</i>
+  </footer>
+</body>
+
+</html>
