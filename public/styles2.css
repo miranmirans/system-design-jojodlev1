@@ -180,18 +180,18 @@ header div {
   backdrop-filter: blur(5px);
 }
 
-header h1 {
+/* header h1 {
   margin: 0;
   color: #333;
   font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-}
+} */
 
-header h3 {
+/* header h3 {
   margin: 1rem 0 0;
   color: #666;
   font-size: 1.2rem;
   font-weight: normal;
-}
+} */
