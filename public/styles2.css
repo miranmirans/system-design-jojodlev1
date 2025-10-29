@@ -135,7 +135,7 @@ header h3 {
   border: 1px solid #FFF;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   box-shadow: 0 2px 7.9px 0 rgba(0, 0, 0, 0.25);
 }
 
