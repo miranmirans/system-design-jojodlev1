@@ -42,7 +42,16 @@ header h1 {
 
 header h3 {
   margin: 0.5rem 0 0 0;
-  color: #666;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 0 25.9px rgba(0, 0, 0, 0.71);
+  font-size: 0.9375rem;
+  line-height: normal;
+  letter-spacing: 0.0375rem;
+
+  font-family: spectral-sc, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #searchForm {
