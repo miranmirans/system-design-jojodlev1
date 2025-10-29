@@ -119,10 +119,12 @@ header h3 {
 }
 
 .propertyImage {
+  align-self: center;
+  justify-self: center;
   display: flex;
   margin: 0.3rem;
-  width: 8vw;
-  height: 8vw;
+  width: calc(8vw + 1rem);
+  height: calc(8vw + 1rem); 
   /* padding: 1rem 1rem; */
   justify-content: center;
   align-items: center;
@@ -150,17 +152,16 @@ header h3 {
 
 .propertyBox {
   display: flex;
-  margin: 0 0.7vw;
+  /* margin: 0 0.7vw; */
   width: 8vw;
   height: 8vw;
-  padding: 1rem 1rem;
+  /* padding: 1rem; */
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #333;
   border-radius: 0.625rem;
-  padding: 0.5rem;
   box-shadow: 0 2px 7.9px 0 rgba(0, 0, 0, 0.25);
 }
 
