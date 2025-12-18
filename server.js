@@ -53,6 +53,52 @@ app.get('/allcharacters', (req, res) => {
     }
 });
 
+//Start of Character of the Day generation code
+function getCharacterOfTheDay(characters) {
+    // Get current date in UTC (YYYY-MM-DD format) to ensure global consistency
+    const today = new Date();
+    const dateString = today.getFullYear() + '-' + 
+                      String(today.getMonth() + 1).padStart(2, '0') + '-' + 
+                      String(today.getDate()).padStart(2, '0');
+        
+    // Create a simple hash from the date string
+    // This creates a deterministic "seed" from the date
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+        const char = dateString.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; // Convert to 32-bit integer
+    }
+    
+    // Use the hash to select an index
+    // Make sure it's positive and within array bounds
+    const index = Math.abs(hash) % characters.length;
+    
+    console.log('Date string for character selection:', dateString);
+    console.log('Generated hash:', hash);
+    console.log('Selected index:', index);
+    console.log('Character of the day:', characters[index].name);
+    
+    return characters[index];
+}
+
+// Add a new endpoint for character of the day
+app.get('/characteroftheday', (req, res) => {
+    console.log('Character of the day endpoint called');
+    try {
+        const characterPath = join(__dirname, 'jojocharacters.json');
+        const characterData = readFileSync(characterPath, 'utf8');
+        let allCharacters = JSON.parse(characterData);
+        
+        const characterOfTheDay = getCharacterOfTheDay(allCharacters);
+        
+        res.json(characterOfTheDay);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Error reading character data');
+    }
+});
+
 
 const port = 3000
 // app.listen(...): starts the web server and prints a message when it's ready.
