@@ -20,8 +20,15 @@ const createSearchbar = (characters) => {
     
     charDiv.appendChild(img);
     charDiv.appendChild(name);
+    
+    // When a user clicks on a character from the searchContainer, fill in the search bar with that character's name
+    charDiv.addEventListener('click', () => {
+      searchText.value = character.name;
+    });
+    
     searchContainer.appendChild(charDiv);
   });
+
 
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
