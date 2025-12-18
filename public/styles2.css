@@ -90,6 +90,49 @@ header h3 {
   background: #7b1fa2;
 }
 
+/* --------styling for search box/container-------- */
+#searchContainer {
+  max-width: 600px;
+  max-height: 300px;
+  margin: 0 auto 2rem;
+  overflow: scroll;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-item:hover {
+  background-color: #f5f5f5;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.search-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ------------------------------------ */
+
 #characters {
   display: flex;
   flex-direction: column;
@@ -164,6 +207,7 @@ header h3 {
   justify-content: center;
   align-items: center;
   background: #333;
+  border: 1px solid #FFF;
   border-radius: 0.625rem;
   box-shadow: 0 2px 7.9px 0 rgba(0, 0, 0, 0.25);
 }
@@ -186,6 +230,22 @@ header h3 {
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 0.02rem;
+}
+
+/* -------property box colours------- */
+.grey {
+    background: #3A3A3C;
+    border: 1px solid #FFF;
+}
+
+.yellow {
+  border: 1px solid #E8E1A7;
+  background: #C2B326;
+}
+
+.green {
+  border: 1px solid #67E951;
+  background: #2F973D;
 }
 
 footer {

@@ -16,3 +16,17 @@ const getCharacters = () => {
 // Load characters when the page loads
 getCharacters();
 
+
+// Function to fetch and display SEARCH characters
+const getSearchCharacters = () => {
+    fetch('/allcharacterssearch')
+        .then(response => response.json())
+        .then(scharacters => {
+            console.log('Fetched searchbar characters:', scharacters);
+            createSearchbar(scharacters);
+        })
+        .catch(error => console.error('Error:', error));
+};
+
+// Load characters when the page loads
+getSearchCharacters();

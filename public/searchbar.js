@@ -3,6 +3,25 @@ import { displayCharacters } from './display.js';
 const createSearchbar = (characters) => {
   const searchForm = document.querySelector('#searchForm');
   const searchText = document.querySelector('#searchText');
+  const searchContainer = document.querySelector('#searchContainer');
+
+  // Populate searchContainer with all characters
+  searchContainer.innerHTML = '';
+  characters.forEach(character => {
+    const charDiv = document.createElement('div');
+    charDiv.className = 'search-item';
+    
+    const img = document.createElement('img');
+    img.src = character.image;
+    img.alt = character.name;
+    
+    const name = document.createElement('span');
+    name.textContent = character.name;
+    
+    charDiv.appendChild(img);
+    charDiv.appendChild(name);
+    searchContainer.appendChild(charDiv);
+  });
 
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();

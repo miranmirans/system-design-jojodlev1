@@ -55,7 +55,7 @@ app.get('/allcharacters', (req, res) => {
 
 //Start of Character of the Day generation code
 function getCharacterOfTheDay(characters) {
-    // Get current date in UTC (YYYY-MM-DD format) to ensure global consistency
+    // Get current date (YYYY-MM-DD format)
     const today = new Date();
     const dateString = today.getFullYear() + '-' + 
                       String(today.getMonth() + 1).padStart(2, '0') + '-' + 
@@ -93,6 +93,27 @@ app.get('/characteroftheday', (req, res) => {
         const characterOfTheDay = getCharacterOfTheDay(allCharacters);
         
         res.json(characterOfTheDay);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Error reading character data');
+    }
+});
+
+//Endpoint for search bar box display of characters in alphabetical order
+app.get('/allcharacterssearch', (req, res) => {
+
+    try {
+            const characterPath = join(__dirname, 'jojocharacters.json');
+            const characterData = readFileSync(characterPath, 'utf8');
+            let allCharacters = JSON.parse(characterData);
+
+            // Extract only name and image, then sort alphabetically by name
+            const searchCharacters = allCharacters
+                .map(char => ({ image: char.image, name: char.name}))
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            res.json(searchCharacters);
+
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Error reading character data');
