@@ -3,6 +3,9 @@ const characterContainer = document.querySelector('#characters');
 
 // Function to display characters
 export const displayCharacters = (characters, compare = false) => {
+    console.log('displayCharacters called with compare =', compare);
+    console.log('Characters:', characters);
+    
     // Clear the container
     characterContainer.innerHTML = `
         <div class="propertyHeader">
@@ -20,6 +23,7 @@ export const displayCharacters = (characters, compare = false) => {
     // Display each character
     characters.forEach(character => {
         if (compare) {
+            console.log('Fetching comparison for character:', character.name);
             // Fetch comparison data from backend
             fetch('/comparecharacter', {
                 method: 'POST',
@@ -29,7 +33,8 @@ export const displayCharacters = (characters, compare = false) => {
                 body: JSON.stringify({ characterName: character.name })
             })
             .then(response => response.json())
-            .then(comparisonData => {
+            .theconsole.log('Comparison data received:', comparisonData);
+                n(comparisonData => {
                 displayCharacterWithComparison(character, comparisonData);
             })
             .catch(error => {
