@@ -33,8 +33,8 @@ export const displayCharacters = (characters, compare = false) => {
                 body: JSON.stringify({ characterName: character.name })
             })
             .then(response => response.json())
-            .theconsole.log('Comparison data received:', comparisonData);
-                n(comparisonData => {
+            .then(comparisonData => {
+                console.log('Comparison data received:', comparisonData);
                 displayCharacterWithComparison(character, comparisonData);
             })
             .catch(error => {
