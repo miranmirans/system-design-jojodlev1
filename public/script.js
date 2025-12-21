@@ -8,25 +8,18 @@ const getCharacters = () => {
         .then(characters => {
             console.log('Fetched characters:', characters);
             displayCharacters(characters);
-            createSearchbar(characters);
+            
+            // Fetch search data and pass full characters for filtering
+            fetch('/allcharacterssearch')
+                .then(response => response.json())
+                .then(scharacters => {
+                    console.log('Fetched searchbar characters:', scharacters);
+                    createSearchbar(scharacters, characters);
+                })
+                .catch(error => console.error('Error:', error));
         })
         .catch(error => console.error('Error:', error));
 };
 
 // Load characters when the page loads
 getCharacters();
-
-
-// Function to fetch and display SEARCH characters
-const getSearchCharacters = () => {
-    fetch('/allcharacterssearch')
-        .then(response => response.json())
-        .then(scharacters => {
-            console.log('Fetched searchbar characters:', scharacters);
-            createSearchbar(scharacters);
-        })
-        .catch(error => console.error('Error:', error));
-};
-
-// Load characters when the page loads
-getSearchCharacters();

@@ -1,13 +1,13 @@
 import { displayCharacters } from './display.js';
 
-const createSearchbar = (characters) => {
+const createSearchbar = (searchCharacters, allCharacters) => {
   const searchForm = document.querySelector('#searchForm');
   const searchText = document.querySelector('#searchText');
   const searchContainer = document.querySelector('#searchContainer');
 
-  // Populate searchContainer with all characters
+  // Populate searchContainer with search characters (name + image only)
   searchContainer.innerHTML = '';
-  characters.forEach(character => {
+  searchCharacters.forEach(character => {
     const charDiv = document.createElement('div');
     charDiv.className = 'search-item';
     
@@ -24,6 +24,11 @@ const createSearchbar = (characters) => {
     // When a user clicks on a character from the searchContainer, fill in the search bar with that character's name
     charDiv.addEventListener('click', () => {
       searchText.value = character.name;
+      // Filter and display the selected character
+      const filteredCharacters = allCharacters.filter(char =>
+        char.name.toLowerCase().includes(character.name.toLowerCase())
+      );
+      displayCharacters(filteredCharacters);
     });
     
     searchContainer.appendChild(charDiv);
@@ -33,7 +38,8 @@ const createSearchbar = (characters) => {
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const query = searchText.value.toLowerCase();
-    const filteredCharacters = characters.filter(character =>
+    // Filter from allCharacters (full data) instead of searchCharacters
+    const filteredCharacters = allCharacters.filter(character =>
       character.name.toLowerCase().includes(query)
     );
     displayCharacters(filteredCharacters);
