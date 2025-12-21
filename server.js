@@ -9,6 +9,9 @@ import { join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Middleware to parse JSON bodies
+app.use(express.json());
+
 
 // Serve static files from /public folder with aggressive cache-busting
 app.use(express.static('public', {
@@ -117,6 +120,61 @@ app.get('/allcharacterssearch', (req, res) => {
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Error reading character data');
+    }
+});
+
+//Endpoint to compare a selected character with character of the day
+app.post('/comparecharacter', (req, res) => {
+    try {
+        const { characterName } = req.body;
+        
+        const characterPath = join(__dirname, 'jojocharacters.json');
+        const characterData = readFileSync(characterPath, 'utf8');
+        let allCharacters = JSON.parse(characterData);
+        
+        // Get character of the day
+        const characterOfTheDay = getCharacterOfTheDay(allCharacters);
+        
+        // Find the selected character
+        const selectedCharacter = allCharacters.find(char => 
+            char.name.toLowerCase() === characterName.toLowerCase()
+        );
+        
+        if (!selectedCharacter) {
+            return res.status(404).send('Character not found');
+        }
+        
+        // Compare properties
+        const propertiesToCompare = ['name', 'gender', 'affiliation', 'nationality', 'standType', 'part'];
+        const comparisonResult = {};
+        
+        propertiesToCompare.forEach(prop => {
+            const selectedValue = selectedCharacter[prop];
+            const correctValue = characterOfTheDay[prop];
+            
+            // Convert to arrays for easier comparison
+            const selectedArray = Array.isArray(selectedValue) ? selectedValue : [selectedValue];
+            const correctArray = Array.isArray(correctValue) ? correctValue : [correctValue];
+            
+            // Check if completely equal
+            if (JSON.stringify(selectedArray.sort()) === JSON.stringify(correctArray.sort())) {
+                comparisonResult[prop] = 'green';
+            }
+            // Check if there's any overlap (partial match)
+            else if (selectedArray.some(val => correctArray.includes(val))) {
+                comparisonResult[prop] = 'yellow';
+            }
+            // Completely different
+            else {
+                comparisonResult[prop] = 'grey';
+            }
+        });
+        
+        res.json(comparisonResult);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Error comparing character');
     }
 });
 

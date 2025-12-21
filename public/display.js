@@ -2,7 +2,7 @@
 const characterContainer = document.querySelector('#characters');
 
 // Function to display characters
-export const displayCharacters = (characters) => {
+export const displayCharacters = (characters, compare = false) => {
     // Clear the container
     characterContainer.innerHTML = `
         <div class="propertyHeader">
@@ -19,33 +19,90 @@ export const displayCharacters = (characters) => {
 
     // Display each character
     characters.forEach(character => {
-        const characterDiv = document.createElement('div');
-        characterDiv.className = 'character-card';
-        
-        // Filter and order the properties we want to display
-        const propertiesToShow = ['gender', 'affiliation', 'nationality', 'standType', 'part'];
-        
-        // Create filtered property object
-        const filteredProperties = propertiesToShow.map(prop => ({
-            name: prop.charAt(0).toUpperCase() + prop.slice(1),
-            value: Array.isArray(character[prop]) ? character[prop].join(', ') : (character[prop] || 'N/A')
-        }));
-
-        // Add character info to the div using the Wordle-style template
-        characterDiv.innerHTML = `
-            <div class="property">
-                <div class="propertyImage" style="background-image: url('${character.image || ''}')">
-                </div>
-                <div class="propertiesContainer">
-                    ${filteredProperties.map(prop => `
-                        <div class="propertyBox">
-                            <p class="propertyValue">${prop.value}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-        
-        characterContainer.appendChild(characterDiv);
+        if (compare) {
+            // Fetch comparison data from backend
+            fetch('/comparecharacter', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ characterName: character.name })
+            })
+            .then(response => response.json())
+            .then(comparisonData => {
+                displayCharacterWithComparison(character, comparisonData);
+            })
+            .catch(error => {
+                console.error('Error comparing character:', error);
+                displayCharacterWithoutComparison(character);
+            });
+        } else {
+            displayCharacterWithoutComparison(character);
+        }
     });
+};
+
+// Function to display character without comparison (original behavior)
+const displayCharacterWithoutComparison = (character) => {
+    const characterDiv = document.createElement('div');
+    characterDiv.className = 'character-card';
+    
+    // Filter and order the properties we want to display
+    const propertiesToShow = ['gender', 'affiliation', 'nationality', 'standType', 'part'];
+    
+    // Create filtered property object
+    const filteredProperties = propertiesToShow.map(prop => ({
+        name: prop.charAt(0).toUpperCase() + prop.slice(1),
+        value: Array.isArray(character[prop]) ? character[prop].join(', ') : (character[prop] || 'N/A')
+    }));
+
+    // Add character info to the div using the Wordle-style template
+    characterDiv.innerHTML = `
+        <div class="property">
+            <div class="propertyImage" style="background-image: url('${character.image || ''}')">
+            </div>
+            <div class="propertiesContainer">
+                ${filteredProperties.map(prop => `
+                    <div class="propertyBox">
+                        <p class="propertyValue">${prop.value}</p>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    characterContainer.appendChild(characterDiv);
+};
+
+// Function to display character with comparison classes
+const displayCharacterWithComparison = (character, comparisonData) => {
+    const characterDiv = document.createElement('div');
+    characterDiv.className = 'character-card';
+    
+    // Filter and order the properties we want to display
+    const propertiesToShow = ['gender', 'affiliation', 'nationality', 'standType', 'part'];
+    
+    // Create filtered property object with comparison classes
+    const filteredProperties = propertiesToShow.map(prop => ({
+        name: prop.charAt(0).toUpperCase() + prop.slice(1),
+        value: Array.isArray(character[prop]) ? character[prop].join(', ') : (character[prop] || 'N/A'),
+        className: comparisonData[prop] || ''
+    }));
+
+    // Add character info to the div using the Wordle-style template with comparison classes
+    characterDiv.innerHTML = `
+        <div class="property">
+            <div class="propertyImage" style="background-image: url('${character.image || ''}')">
+            </div>
+            <div class="propertiesContainer">
+                ${filteredProperties.map(prop => `
+                    <div class="propertyBox ${prop.className}">
+                        <p class="propertyValue">${prop.value}</p>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    characterContainer.appendChild(characterDiv);
 };
