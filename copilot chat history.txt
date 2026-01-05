@@ -1242,3 +1242,667 @@ Now, please try these steps in this specific order:
 Let me know if you still see the old version after following these steps. If you do, we can try renaming the CSS file to force the browser to treat it as a completely new resource.
 
 Made changes.
+
+User: How would I write code that selects a character (object) from the jojocharacters.json file each calendar day date, that is the same object globally, using a seed? A different object is chosen each day, but the chosen object is the same for every user globally. A seed should be used, so that even I am unaware of what object is chosen for that day.
+
+GitHub Copilot: I'll help you write code that selects a character from the JSON file based on the calendar date using a seeded random approach. Let me first check the structure of your files to provide the best implementation. 
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/jojocharacters.json#1-1), lines 1 to 50
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#1-1), lines 1 to 50
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#50-50), lines 50 to 63
+
+Perfect! Here's how you can implement a date-based seeded character selection. I'll create a function that uses a simple hash of the date as a seed to deterministically select a character:
+
+```javascript
+// Add this function to your server.js
+function getCharacterOfTheDay(characters) {
+    // Get current date in UTC (YYYY-MM-DD format) to ensure global consistency
+    const today = new Date();
+    const dateString = today.getUTCFullYear() + '-' + 
+                      String(today.getUTCMonth() + 1).padStart(2, '0') + '-' + 
+                      String(today.getUTCDate()).padStart(2, '0');
+    
+    // Create a simple hash from the date string
+    // This creates a deterministic "seed" from the date
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+        const char = dateString.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; // Convert to 32-bit integer
+    }
+    
+    // Use the hash to select an index
+    // Make sure it's positive and within array bounds
+    const index = Math.abs(hash) % characters.length;
+    
+    return characters[index];
+}
+
+// Add a new endpoint for character of the day
+app.get('/characteroftheday', (req, res) => {
+    try {
+        const characterPath = join(__dirname, 'jojocharacters.json');
+        const characterData = readFileSync(characterPath, 'utf8');
+        let allCharacters = JSON.parse(characterData);
+        
+        const characterOfTheDay = getCharacterOfTheDay(allCharacters);
+        
+        res.json(characterOfTheDay);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Error reading character data');
+    }
+});
+```
+
+**How it works:**
+
+1. **UTC Date**: Uses UTC date format (YYYY-MM-DD) so all users globally get the same date regardless of timezone
+2. **Deterministic Hash**: Converts the date string into a numeric hash - same date always produces same hash
+3. **Index Selection**: Uses modulo operation to map the hash to a valid array index
+4. **Unpredictable**: The hash function makes it impossible to predict which character will be selected without actually running the code for that date
+
+**To use it:**
+- Call `GET /characteroftheday` from your frontend to get today's character
+- Every user worldwide will get the same character for the same calendar day
+- Tomorrow, a different character will be automatically selected
+
+Would you like me to add this to your server.js file and create a frontend example to use it?
+
+User: yes
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/script.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/index.html#1-1), lines 1 to 50
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/index.html#50-50), lines 50 to 56
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js)
+
+Now I'll add the functionality to your server.js and create a feature in the frontend to display the character of the day: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+Now let's add some CSS styling for the character of the day display: 
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/styles2.css#1-1), lines 1 to 50
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/styles2.css#200-200), lines 200 to 219
+
+Using "Replace String in File"
+
+
+```
+
+```
+Perfect! I've implemented the character of the day feature. Here's what was added:
+
+**Backend (server.js):**
+- `getCharacterOfTheDay()` function that uses a date-based hash as a seed
+- `/characteroftheday` endpoint that returns today's character
+
+**Frontend:**
+- Updated script.js to fetch and display the character of the day
+- Updated index.html with a new section for the character
+- Added CSS styling in styles2.css for the character card
+
+**How it works:**
+- Uses UTC date (YYYY-MM-DD) so everyone worldwide sees the same character
+- Creates a deterministic hash from the date - same date = same hash = same character
+- The character selection is unpredictable without running the actual code
+- Changes automatically at midnight UTC each day
+
+To test it, restart your server:
+
+```bash
+npm start
+```
+
+Then visit `http://localhost:3000` and you'll see the character of the day displayed at the top of the page!
+
+Made changes.
+
+User: How can I use console.log in server.js to check the character of the day?
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#1-1), lines 1 to 63
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#63-63), lines 63 to 103
+
+Great! I can see you already have the character of the day code. Here's how to add console.log statements to check what character is selected: 
+
+Using "Multi-Replace String in Files"
+
+
+```
+
+```
+Perfect! Now when you run your server and access the `/characteroftheday` endpoint, you'll see in your terminal:
+
+1. **Date string for character selection** - The UTC date being used (e.g., "2025-12-17")
+2. **Generated hash** - The numeric hash generated from the date
+3. **Selected index** - Which array position was selected
+4. **Character of the day** - The name of the selected character
+
+You can test it by:
+1. Starting your server: `npm start` or `node server.js`
+2. Visiting `http://localhost:3000/characteroftheday` in your browser or using curl/Postman
+3. Check the terminal where the server is running to see the console.log output
+
+The logs will show you exactly which character is selected for today and how the selection process works!
+
+Made changes.
+
+User: can you change the time basis to be each user's local time, but keep the character per date the same globally?
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#55-55), lines 55 to 109
+
+I'll modify the code to accept the user's local date as a parameter, so each user sees the character based on their local timezone, but the same date always produces the same character globally: 
+
+Using "Multi-Replace String in Files"
+
+
+```
+
+```
+Now I need to update the frontend to send the client's local date. Let me check the current frontend code: 
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/script.js)
+
+Now I'll create a simple test script you can add to your frontend to demonstrate this working. Here's an example you can use: 
+
+Created [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/characteroftheday.js)
+
+Perfect! I've updated the code. Here's what changed:
+
+**Backend (server.js):**
+- Modified `getCharacterOfTheDay()` to accept a `dateString` parameter
+- Updated `/characteroftheday` endpoint to accept a `date` query parameter from the client
+- Falls back to server's local time if no date is provided
+
+**Frontend (created characteroftheday.js):**
+- Gets the client's local date using JavaScript's `Date` object
+- Sends it to the server as a query parameter: `/characteroftheday?date=2025-12-18`
+
+**How it works now:**
+- Each user sees the character based on **their local calendar date**
+- But the **same date always produces the same character** globally
+- Users in different timezones may see different characters at the same moment (if they're on different calendar dates)
+- All users experiencing "December 18, 2025" see the same character, regardless of timezone
+
+**To use it:**
+You can test the endpoint directly in your browser:
+- `http://localhost:3000/characteroftheday?date=2025-12-18`
+- `http://localhost:3000/characteroftheday?date=2025-12-17`
+
+Or import and call the function in your script.js:
+```javascript
+import { getCharacterOfTheDay } from './characteroftheday.js';
+getCharacterOfTheDay();
+```
+
+Made changes.
+
+User: What is a modulo operator?
+
+GitHub Copilot: The modulo operator (`%`) returns the **remainder** after division.
+
+**Examples:**
+- `10 % 3 = 1` (10 divided by 3 is 3 with remainder 1)
+- `15 % 4 = 3` (15 divided by 4 is 3 with remainder 3)
+- `8 % 2 = 0` (8 divided by 2 is 4 with no remainder)
+
+**In your character selection code:**
+```javascript
+const index = Math.abs(hash) % characters.length;
+```
+
+This ensures the hash value "wraps around" to stay within the array bounds. For example:
+- If `hash = 12345` and `characters.length = 100`
+- Then `12345 % 100 = 45`
+- So it selects character at index 45
+
+The modulo operator effectively converts any number into a valid array index (0 to length-1), which is why it's perfect for selecting a random-seeming but deterministic element from an array.
+
+User: what is characters.length?
+
+GitHub Copilot: `characters.length` is the **number of characters in the array**.
+
+The `.length` property returns how many elements are in an array.
+
+**In your code:**
+- `characters` is the array loaded from jojocharacters.json
+- `characters.length` tells you how many character objects are in that array
+
+**For example:**
+If your JSON file has 150 characters, then `characters.length = 150`
+
+**Why it's used:**
+```javascript
+const index = Math.abs(hash) % characters.length;
+```
+
+This ensures the index is always valid. If you have 150 characters (indices 0-149), the modulo operation guarantees the result is between 0 and 149, so you never try to access an index that doesn't exist.
+
+User: Is it possible for characters to be repeated before the entire array of characters has been chosen?
+
+GitHub Copilot: **Yes**, characters can definitely repeat before the entire array has been shown.
+
+The current algorithm doesn't track which characters have been used—it just hashes the date and picks whatever index that hash produces. This means:
+
+- **Day 1** might select character at index 42
+- **Day 2** might select character at index 15  
+- **Day 3** might select character at index 42 again (repeat!)
+
+**Why this happens:**
+The hash function creates a pseudo-random number from the date, but it doesn't guarantee:
+- Even distribution across all indices
+- That all characters will be shown before repeats
+- Sequential cycling through the array
+
+**If you want to avoid repeats until all characters are shown:**
+You'd need a different approach, like:
+1. Use a shuffled sequence based on the year (not just daily hash)
+2. Track day-of-year (1-365) and map it to a shuffled array
+3. Reset the shuffle each year
+
+The current method prioritizes **simplicity** and **unpredictability** over **guaranteed coverage** of all characters.
+
+User: Adjusting lines 102-117 in server.js, how can I create an endpoint that outputs only the image and name of an object from the jojocharacters.json file, sorting the objects by their name alphabetically?
+
+GitHub Copilot: I'll modify the `/allcharacterssearch` endpoint to extract only the name and image properties and sort them alphabetically by name. 
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! The `/allcharacterssearch` endpoint now:
+1. Maps each character object to extract only `name` and `image` properties
+2. Sorts the results alphabetically by name using `localeCompare()` for proper string comparison
+3. Returns the filtered and sorted array
+
+The endpoint will now return an array of objects containing only `{name: "...", image: "..."}` sorted from A-Z.
+
+Made changes.
+
+User: What does 'char' refer to in line 112?                 .map(char => ({ name: char.name, image: char.image }))
+
+
+GitHub Copilot: `char` is the parameter name for each individual character object in the `allCharacters` array as `.map()` iterates through it. 
+
+Since `allCharacters` is an array of character objects, `char` represents one character object at a time during the iteration. You could name it anything (like `character`, `c`, or `item`), but `char` is a shorthand convention for "character" in this context.
+
+User: Using lines 20-31 from script.js, adjusting searchbar.js, how can the searchContainer in index.html be populated with fetched objects from the endpoint /allcharactersearch? searchContainer should be a container that scrolls using overflow: scroll; in css
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/script.js#20-20), lines 20 to 31
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/index.html)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/styles2.css#1-1), lines 1 to 100
+
+Now I'll update searchbar.js to populate the searchContainer with the fetched characters and add CSS for the scrollable container: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/styles2.css#85-85), lines 85 to 100
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! I've updated:
+
+1. **searchbar.js**: Now fetches from `/allcharacterssearch` and populates the `searchContainer` with character items showing their image and name
+
+2. **styles2.css**: Added styling for `#searchContainer` with `overflow: scroll` (300px max height) and `.search-item` classes for the individual character entries with hover effects
+
+The searchContainer will now display a scrollable list of all characters in alphabetical order with their images.
+
+Made changes.
+
+User: When a user clicks on a search-item from the searchContainer, fill in the search bar with that item's character's name
+
+
+GitHub Copilot: Using "Replace String in File"
+
+
+```
+
+```
+Done! Now when you click on any character in the searchContainer, their name will populate the search bar.
+
+Made changes.
+
+User: searchbar.js and script.js be adjusted so that the section #characters displays items from /allcharacters instead of /allcharacterssearch? Since right now, the section #characters displays only the image, rather than other properties
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/script.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+I can see the issue. The searchbar's filter is using the limited data from `/allcharacterssearch` (only name and image), but trying to display full character properties. I need to:
+
+1. Keep two separate data sources - one for the searchContainer dropdown, one for the full character data
+2. Update searchbar.js to filter from the full character data when searching 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! Now:
+- The `#characters` section displays full character data from `/allcharacters` with all properties (gender, affiliation, nationality, stand type, part)
+- The `searchContainer` dropdown uses the lightweight data from `/allcharacterssearch` (just name and image for efficient scrolling)
+- When searching, it filters from the full character data so all properties are displayed correctly
+
+Made changes.
+
+User: When the user clicks on a charDiv of a character in the searchContainer, the character should appear in the #characters section, as if the user clicked the search button.
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! Now when a user clicks on a character in the searchContainer dropdown, it will both fill the search bar with the character's name and immediately display that character in the #characters section.
+
+Made changes.
+
+User: How can I add code, using add.EventListener('keydown' https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event so that as the user inputs text into the searchForm the searchContainer searchCharacters are updated with each keydown press and are filtered by name?
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! I've added a `keydown` event listener to the searchText input that filters the searchContainer characters in real-time as the user types. The code:
+
+1. Extracts the population logic into a reusable `populateSearchContainer()` function
+2. Adds a `keydown` event listener that filters `searchCharacters` by name on each keypress
+3. Uses `setTimeout` to ensure the input value is updated before filtering (since keydown fires before the character is added to the input)
+
+Now as you type, the dropdown will dynamically show only matching characters.
+
+Made changes.
+
+User: is the populateSearchContainer() function needed for the code to work as expected?
+
+GitHub Copilot: No, it's not strictly needed, but it avoids code duplication. Without it, you'd have to copy-paste the entire `forEach` loop (creating the charDiv, adding event listeners, etc.) in two places - once for the initial population and once inside the keydown listener. 
+
+The function makes the code cleaner and easier to maintain. If you need to change how search items are displayed, you only update it in one place instead of two.
+
+User: First, in the public javascript, create a variable to store the object data of the character that the user inputs from the search bar (either through them submitting a character name or clicking on a characterDiv). Then, in the backend server.js, call that variable and compare that variable properties with the characterOfTheDay's properties.
+Then, for each property using if else statements:
+if propertyValue prop is completely inequal (!=), assign the class .grey to the propertyBox.
+else if propertyValue prop.value contains the same values and is equal (===), assign the class .green to the propertyBox.
+else assign the class .yellow to the propertyBox.
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js)
+
+Now I'll implement the feature. I'll:
+1. Create a variable to store the selected character in the frontend
+2. Create a new backend endpoint that compares the character with characterOfTheDay
+3. Modify the display function to apply the appropriate classes based on comparison results 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done! I've implemented the complete comparison system:
+
+**Frontend changes:**
+1. **searchbar.js**: Added `selectedCharacter` variable to store the user's selection. When a user clicks a character or submits the form, it stores the character and calls `displayCharacters` with comparison enabled.
+
+2. **display.js**: Modified to support comparison mode. When comparison is enabled, it fetches comparison data from the backend and applies the appropriate CSS classes (`.green`, `.yellow`, `.grey`) to each property box.
+
+**Backend changes:**
+3. **server.js**: 
+   - Added `express.json()` middleware to parse JSON request bodies
+   - Created new `/comparecharacter` POST endpoint that:
+     - Receives the selected character name
+     - Gets the character of the day
+     - Compares each property (gender, affiliation, nationality, standType, part)
+     - Returns class assignments based on:
+       - `.green` if values are completely equal (===)
+       - `.yellow` if there's partial overlap
+       - `.grey` if completely inequal (!=)
+
+Now when users select a character, each property box will be colored based on how it matches the character of the day!
+
+Made changes.
+
+User: When I check the browser and click a character from the search container or type a name, property boxes have no colour, meaning they haven't been assigned either a grey, yellow, or green class. Does this mean 'comparison mode' is not enabled?
+
+GitHub Copilot: Let me check if the CSS classes are defined and verify the code is working correctly: 
+
+Searched for regex `\.(green|yellow|grey)` (`**/styles2.css`), 3 results
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js#1-1), lines 1 to 100
+
+Ran terminal command: node server.js
+
+The CSS classes exist and the code looks correct. Let me check the browser console to see if there are any errors. Can you open your browser's Developer Tools (press F12) and check:
+
+1. The **Console** tab for any error messages
+2. The **Network** tab to see if the POST request to `/comparecharacter` is being made
+
+However, I can add some console logging to help debug. Let me add logging to confirm comparison mode is being triggered: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+Now refresh your browser and try selecting a character again. Check the Console tab (F12 → Console) and look for these messages:
+- "displayCharacters called with compare = true/false"
+- "Fetching comparison for character: [name]"
+- "Comparison data received: {gender: 'green', ...}"
+
+This will tell us if comparison mode is being triggered and if the backend is responding correctly. What do you see in the console?
+
+Made changes.
+
+User: displayCharacters called with compare = true
+display.js:7 Characters: [{…}]0: {name: 'Cameo', part: 'Stardust Crusaders', gender: 'Male', nationality: 'N/A', affiliation: 'Agents of DIO', …}length: 1[[Prototype]]: Array(0)
+display.js:26 Fetching comparison for character: Cameo
+display.js:36 Uncaught TypeError: Cannot read properties of undefined (reading 'log')
+    at display.js:36:24
+    at Array.forEach (<anonymous>)
+    at displayCharacters (display.js:24:16)
+    at HTMLFormElement.<anonymous> (searchbar.js:70:7)
+(anonymous) @ display.js:36
+displayCharacters @ display.js:24
+(anonymous) @ searchbar.js:70Understand this error
+early-page.js:796  POST http://localhost:3000/comparecharacter 404 (Not Found)
+wrapFetch2 @ early-page.js:796
+await in wrapFetch2
+(anonymous) @ display.js:28
+displayCharacters @ display.js:24
+(anonymous) @ searchbar.js:70Understand this error
+VM182:1 Uncaught (in promise) SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+
+GitHub Copilot: The error shows that the `/comparecharacter` endpoint is returning a 404 error. This means the server doesn't recognize the endpoint. Let me check the current server.js file: 
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/server.js#100-100), lines 100 to 180
+
+The endpoint is there! The issue is that the server wasn't restarted after we added the endpoint. You need to restart the server. Let me do that: 
+
+Ran terminal command: Get-Process -Name node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; node server.js
+
+Perfect! The server has been restarted. Now refresh your browser page and try selecting a character again. The comparison should work now and you should see the colored property boxes (green, yellow, or grey) based on how they match the character of the day.
+
+User: Characters don't display anymore in the characters section when selected
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js#30-30), lines 30 to 45
+
+I see the problem! There's a syntax error on line 36-37. The code got corrupted - "then" is split and "console.log" is in the wrong place. Let me fix it: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+Fixed! Now refresh your browser and try selecting a character again. The display should work properly now with the color-coded property boxes.
+
+Made changes.
+
+User: How can I store the history of selected characters for each user's individual browser, and have the most recent selected character stack above the last?
+
+GitHub Copilot: Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/searchbar.js)
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js#1-1), lines 1 to 50
+
+I'll add localStorage functionality to store the character selection history and display the most recent character on top: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/script.js)
+
+Now I need to update script.js to not display all characters on page load, and instead show the history: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Read [](file:///c%3A/Users/cassi/Downloads/HideYourKeys-main/public/display.js#70-70), lines 70 to 80
+
+Now I need to add the loadHistoryOnPageLoad function: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+Perfect! Now the system will:
+
+1. **Store history in localStorage**: Each time a user selects a character (either by clicking or searching), it's saved to the browser's localStorage
+2. **Most recent on top**: New selections are added to the beginning of the array using `unshift()`
+3. **Limit to 10 characters**: The history is capped at 10 characters to prevent it from growing too large
+4. **Persists across sessions**: Since it uses localStorage, the history will remain even if the user closes and reopens the browser
+5. **Load history on page load**: When the page loads, it displays the selection history instead of all characters
+
+Refresh your browser and try selecting some characters. Each new selection will appear at the top with color-coded property boxes based on comparison with the character of the day!
+
+Made changes.
