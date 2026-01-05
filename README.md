@@ -2,5 +2,5 @@
 ### Project 1 System Design
 
 ## About
-This is a version of a Wordle inspired game that's based off of the series Jojo's Bizarre Adventure. At this stage, character information can be retrieved by searching for a character by name.
+This is a version of a Wordle inspired game that's based off of the series Jojo's Bizarre Adventure. User's can try to guess a character from the series by using the search bar.
 
